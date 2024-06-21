@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+span {
+  color: #0d6efd;
+}
+li {
+  list-style: none;
+}
+button {
+  border: 1px solid purple;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background: #0d6efd;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background-color: purple;
+  transition: 0.7s;
+}
+.hero-section {
+  width: 100%;
+  height: 650px;
+  background: url("image/slider-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.hero-overlay {
+  width: 100%;
+  height: 650px;
+  background-color: rgba(43, 54, 66, 0.6);
+}
+.logo,
+.logon {
+  width: 120px;
+  height: 100px;
+}
+header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+}
+header .header-links {
+  display: flex;
+  gap: 40px;
+}
+header .header-links li {
+  list-style: none;
+}
+header .header-links a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #b9bec3;
+}
+header .header-links li a:hover {
+  color: #0d6efd;
+  transition: 0.5;
+}
+.hero-content {
+  width: 52rem;
+  margin: 60px auto;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 50px;
+  color: #fff;
+}
+.hero-content p {
+  width: 80%;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 30px auto;
+  color: #b9bec3;
+  text-align: center;
+}
+/* About Us Section */
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 100px 0;
+  gap: 50px;
+  align-items: center;
+}
+.about-img {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.about-img div,
+.about-img div img {
+  width: 250px;
+  height: 400px;
+  border-radius: 20px;
+}
+/* .about-img div:nth-child(1){
+    grid-row: 2;
+    align-self: center;
+} */
+
+/* About Us Animation*/
+.about-img .first {
+  grid-row: span 2;
+  align-self: center;
+  overflow: hidden;
+}
+.about-img .second,
+.third {
+  overflow: hidden;
+}
+.about-img .first img,
+.second img,
+.third img {
+  transition: transform 0.5s;
+  transform: scale(1) rotate(0deg);
+}
+.about-img .first img:hover,
+.second img:hover,
+.third img:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.about-img .third {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+/* About us Animation ends*/
+
+.about-us .about-content #p {
+  border: 1px solid #f1edf7;
+  width: 90px;
+  text-align: center;
+  background-color: #f1edf7;
+  color: #0d6efd;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.about-us .about-content p {
+  margin-top: 30px;
+  opacity: 0.8;
+}
+.about-us .about-content h1 {
+  font-size: 35px;
+}
+
+/* Why us*/
+.about-us .why-us {
+  align-items: center;
+  margin-bottom: 150px;
+  width: 100%;
+}
+.why-us .whyus-top,
+.funding .fund-content,
+.f-process {
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.why-us .whyus-top h1 {
+  font-size: 30px;
+}
+.why-us .whyus-top p {
+  color: #b9bec3;
+  margin-top: 15px;
+}
+.why-us .links {
+  display: flex;
+  gap: 10px;
+}
+.why-us .links div {
+  width: 150x;
+  height: 200px;
+  background-color: #f8f9fc;
+  padding: 30px 25px;
+  text-align: left;
+}
+.why-us .links div h2 {
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+.why-us .links div p {
+  color: #b9bec3;
+}
+
+/* Blockchain*/
+.blockchain,
+.emb-contentt {
+  display: flex;
+  margin-top: 200px;
+  align-items: center;
+}
+.blockchain h1,
+.emb-contentt h1,
+.acceleration h1,
+.in-touch h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/*Our Service */
+.our-service {
+  display: flex;
+  gap: 20px;
+}
+.our-service .services {
+  height: 450px;
+  border: 1px solid #b9bec3;
+}
+.our-service .services .contentss {
+  padding: 10px;
+}
+
+/* Fund Process*/
+.f-process {
+  line-height: 2.5;
+}
+.fund-process {
+  margin-top: 80px;
+  text-align: center;
+}
+.fund-process p:nth-child(1) {
+  font-size: 15px;
+  color: #0d6efd;
+}
+.fund-process h1 {
+  font-size: 30px;
+}
+.fund-process p:last-child,
+.fund-process h3 {
+  color: #b9bec3;
+}
+
+.fund-process .option {
+  display: flex;
+  line-height: 2;
+}
+.fund-process .option div:nth-child(2) {
+  margin-top: 30px;
+}
+.fund-process .option div:nth-child(3) {
+  margin-top: 60px;
+}
+.embrace {
+  position: relative;
+  align-items: center;
+  margin-top: 100px;
+}
+.emb-contentt {
+  display: flex;
+  gap: 60px;
+  z-index: 5;
+}
+.emb-contentt img {
+  border-radius: 10px;
+}
+.embrace .overlays {
+  width: 400px;
+  height: 400px;
+  background: #b9bec3;
+  justify-content: center;
+}
+
+.acceleration {
+  height: 800px;
+  display: flex;
+  gap: 40px;
+  padding: 0 100px;
+  align-items: center;
+  background: #f8f9fc;
+}
+.acceleration img {
+  border-radius: 10px;
+}
+.in-touch {
+  width: 80%;
+  height: 250px;
+  margin: 100px auto;
+  background-color: #0d6efd;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  padding: 40px;
+  display: flex;
+  line-height: 2;
+  gap: 100px;
+}
+.conte {
+  width: 70%;
+  align-items: center;
+}
+.in-touch h1 {
+  color: #fff;
+}
+.in-touch p {
+  color: #b9bec3;
+}
+.in-touch button {
+  width: 150px;
+  height: 50px;
+  background: #fff;
+  color: #000;
+  align-self: flex-end;
+  border: none;
+}
+.shine {
+  height: 600px;
+  background-size: cover;
+  width: 100%;
+  background: url("image/giphy.gif");
+}
+.shine .overlay {
+  width: 100%;
+  height: 600px;
+  background: #0d6efd;
+  opacity: 0.8;
+}
+.logos {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 100px;
+  background: #f8f9fc;
+}
+.logos img {
+  width: auto;
+  height: 120px;
+}
+.shine .contens {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  line-height: 2;
+  padding-top: 100px;
+}
+.shine .contes h1 {
+  color: white;
+  font-size: 32px;
+}
+.shine .contens p {
+  font-size: 17px;
+  color: white;
+}
+.shine .contens button {
+  background-color: #0066ff;
+}
+
+/* waves*/
+.wavess {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 400px;
+  background-color: #202942;
+  border-top: 2px solid #202942;
+}
+.flex {
+  display: flex;
+  padding: 40px 80px;
+  gap: 150px;
+  color: #fff;
+  align-items: center;
+}
+.flex .wave-logo {
+  width: 300px;
+}
+.flex .wave-logo .icons {
+  display: flex;
+  gap: 20px;
+  color: #b9bec3;
+  line-height: 50px;
+}
+.flex .wave-logo .icons .a {
+  width: 80px;
+  height: 40px;
+  line-height: 50%;
+  border: 1px solid #000;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.flex li {
+  list-style: none;
+}
+.flex ul {
+  line-height: 2;
+}
+.flex .top-list {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.flex li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #f1edf7;
+}
+@media (max-width: 480px) {
+  .hero-section header {
+    visibility: hidden;
+    display: none;
+  }
+  .hero-content {
+    position: absolute;
+    display: block;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px 0 0 0y;
+  }
+  .hero-content h1,
+  .why-us .whyus-top h1,
+  .emb-contentt h1 {
+    font-size: 32px;
+  }
+  .hero-content p,
+  .why-us .whyus-top p {
+    width: 95%;
+    font-size: 20px;
+    margin: 30px auto 10px auto;
+    color: #b9bec3;
+    text-align: center;
+  }
+  .container {
+    width: 100%;
+  }
+  /* About Us Section*/
+  .about-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 80px 0 0 0;
+    gap: 20px;
+    height: 135rem;
+  }
+  .about-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    place-items: center;
+  }
+  .about-img .first {
+    grid-row: span 1/2;
+    overflow: hidden;
+  }
+  .about-img .second {
+    grid-row: 2/3;
+  }
+  .about-img .third {
+    grid-column: 1;
+    grid-row: 3/3;
+  }
+  .about-content {
+    padding: 0 40px;
+    align-items: center;
+    text-align: center;
+  }
+  .about-us .about-content #p {
+    border: 1px solid #f1edf7;
+    width: 90px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    background-color: #f1edf7;
+    color: #0d6efd;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  /* why us start..*/
+  .why-us .whyus-top {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto 80px auto;
+  }
+
+  .why-us .links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  /* Blockchain*/
+  .blockchain {
+    margin-bottom: 100px;
+  }
+  .blockchain,
+  .emb-contentt {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .blockchain img {
+    display: none;
+  }
+  /* our Services*/
+  .funding {
+    border: 1px solid black;
+  }
+  .funding .fund-content {
+    width: 95%;
+    align-items: center;
+    text-align: center;
+  }
+  .our-service {
+    display: flex;
+    flex-direction: column;
+  }
+  .our-service img {
+    width: 100%;
+  }
+  .our-service .services {
+    margin-bottom: 30px;
+  }
+  /* fund Process*/
+  .fund-process {
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+  .fund-process .f-process {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .fund-process .option {
+    display: flex;
+    flex-direction: column;
+  }
+  /*embrace*/
+  .embrace {
+    padding: 0 2%;
+  }
+  .embrace img {
+    display: none;
+  }
+  /* acceleration*/
+  .acceleration {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 5%;
+  }
+  .acceleration img {
+    display: none;
+  }
+  /* in touch */
+  .in-touch {
+    width: 95%;
+    flex-direction: column;
+    height: 380px;
+    padding: 10px;
+    gap: 0;
+  }
+  .conte {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .in-touch button {
+    align-self: center;
+  }
+  /* shine */
+  .shine .logos {
+    display: none;
+  }
+  .shine .contens {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .shine .contes * h1 {
+    font-size: 35px;
+  }
+  /* waves */
+  .wavess {
+    height: 930px;
+    align-items: center;
+    text-align: center;
+  }
+  .flex {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .flex .icons div {
+    display: none;
+  }
+}
